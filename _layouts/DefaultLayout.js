@@ -10,7 +10,7 @@ export default function DefaultLayout(props) {
                 <meta name='description' content={props.description} />
             </Head>
             <Navbar />
-            <div style={{marginTop: '85px'}}>
+            <div style={{marginTop: '24px'}}>
                 {props.children}
             </div>
             <Footer />

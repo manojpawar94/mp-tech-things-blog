@@ -10,7 +10,7 @@ export default function Home(props) {
         <div className="row">
           <h3>Go Programming Language Tutorials</h3>
         </div>
-        <div className="row" style={{ marginLeft: '-15px', marginRight: '-15px' }}>
+        <div className="row">
           {props.posts.map(function (post, idx) {
             if (idx > 3)
               return;

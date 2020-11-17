@@ -1,17 +1,25 @@
 import Link from 'next/link'
 import styles from '../styles/Navbar.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 export default function Navbar() {
+
+    const toggleActive = (event) => {
+        document.getElementById('js-menu').classList.toggle(styles.active);
+    }
+
     return (
-        <div className={styles.navbar} id="navbarId">
-            <ul className={styles.menuContainer}>
-                <li className={styles.menuItem}>
-                    <Link href="/" >
-                        <a className={styles.menuLink}>
-                            <strong>MP TechThings</strong>
-                        </a>
-                    </Link>
-                </li>
+        <div className={styles.navbar} >
+            <span className={styles.navbarToggle} id="js-navbar-toggle" onClick={toggleActive}>
+                <FontAwesomeIcon icon={faBars} />
+            </span>
+            <Link href="/" >
+                <a className={styles.logo}>
+                    MP TechThings
+                </a>
+            </Link>
+            <ul className={styles.menuContainer} id="js-menu">
                 <li className={styles.menuItem}>
                     <Link href="/" >
                         <a className={styles.menuLink}>Home</a>
@@ -27,23 +35,7 @@ export default function Navbar() {
                         <a className={styles.menuLink}>Profilio</a>
                     </Link>
                 </li>
-                <li className={styles.menuItem}>
-                    <Link href="javascript:void(0);" >
-                        <a className={styles.menuLink && styles.icon} onClick={action}>
-                            <i class="fa fa-bars"></i>
-                        </a>
-                    </Link>
-                </li>
             </ul>
         </div>
     )
-}
-
-function action() {
-    var element = document.getElementById("navbarId");
-    if (element.className === "navbar") {
-        element.className += " responsive";
-    } else {
-        element.className = "navbar";
-    }
 }

@@ -3,7 +3,7 @@ import styles from '../styles/Navbar.module.css'
 
 export default function Navbar() {
     return (
-        <div className={styles.navbar}>
+        <div className={styles.navbar} id="navbarId">
             <ul className={styles.menuContainer}>
                 <li className={styles.menuItem}>
                     <Link href="/" >
@@ -27,8 +27,23 @@ export default function Navbar() {
                         <a className={styles.menuLink}>Profilio</a>
                     </Link>
                 </li>
+                <li className={styles.menuItem}>
+                    <Link href="javascript:void(0);" >
+                        <a className={styles.menuLink && styles.icon} onClick={action}>
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </Link>
+                </li>
             </ul>
         </div>
     )
+}
 
+function action() {
+    var element = document.getElementById("navbarId");
+    if (element.className === "navbar") {
+        element.className += " responsive";
+    } else {
+        element.className = "navbar";
+    }
 }

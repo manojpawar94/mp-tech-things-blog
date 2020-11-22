@@ -1,0 +1,154 @@
+for(int index = 0 ; ;){
+
+}
+loo
+//get employee list
+List<Employee> employees = geEmployee();
+\n
+class Constant {
+    public static final String CONTACT_OPR = "-";
+}
+
+String  empFullName = employee.getFirstname() 
++ Constant.CONTACT_OPR +
+employee.getLastname();
+
+
+SOLID
+
+1. SRP 
+Object 
+
+Employee{
+ fristName
+ lastName
+ empId
+ salary
+
+    printLog(){}
+
+    save(){}
+
+    get(){}
+
+    writeToFile(){}
+}
+
+for(int index = 0 ; ;){
+
+}
+
+-----------
+EmpApp empApp = new EmpApp(new TextFileWrite());
+EmpApp empApp = new EmpApp(new JsonFileWrite());
+
+class EmpApp{
+    private EmployeeRepository employeeRepository; 
+    private Logger logger;
+    private FileWriter fileWriter;
+
+    public(FileWriter fileWriter){
+        fileWriter = fileWriter;
+    }
+}
+
+Employee{
+ fristName
+ lastName
+ empId
+ salary
+}
+
+interface EmployeeRepository {
+    save();
+    get();
+}
+
+class EmployeeRepositoryImpl implement EmployeeRepository {
+    save(){}
+    get(){}
+}
+
+for(int employeeIndex = 0 ; ;){
+
+}
+
+interface Logger {
+    printLog();
+}
+
+LoggerImpl extend Logger {
+    printLog(){}
+}
+
+interface FileWriter{
+    writeToFile(){}
+}
+
+class TextFileWrite implement FileWriter {
+    writeToFile(){}
+}
+
+class JsonFileWrite implement FileWriter {
+    writeToFile(){}
+}
+==========
+
+class class Account{
+    openAccount();
+    updateAccunt();
+}
+
+class CurrentAccount implement Account{
+     updateAccunt(){
+
+         //line
+         //line
+     }
+}
+
+class App{
+   private Account currentAccount;
+
+    public App(Account account){
+        currentAccount = account;
+    }
+
+    public void setAccout(Account account){
+        currentAccount = account;
+    }
+}
+class ConsumerApp{
+   private Account currentAccount = new CurrentAccount();
+
+    public App(){
+        
+    }
+
+    
+}
+
+
+ConsumerApp app = new ConsumerApp(new CurrebtAccount);
+
+class SavingAccount implement Account{ 
+    private String  
+}
+
+class NewCurrentAccount extend CurrentAccount {
+     //after Month
+    closeAccount();
+}
+class Constant {
+    public static final String NEW_LINE = "\n";
+}
+
+2.OCP open closed principle
+
+3. LSP
+Abstract class
+Account currentAccount = new NewCurrentAccount();
+
+4.ISP
+
+5. DIP

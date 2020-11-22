@@ -1,5 +1,5 @@
-import GitHubRepoList from "pages/_components/github-repo-component";
-import DefaultLayout from "pages/_layouts/DefaultLayout";
+import GitHubRepoList from "_components/github-repo-component";
+import DefaultLayout from "_layouts/DefaultLayout";
 import Head from "next/head";
 
 export default function Profilio() {

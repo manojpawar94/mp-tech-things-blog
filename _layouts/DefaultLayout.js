@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Navbar from 'pages/_includes/Navbar'
-import Footer from 'pages/_includes/Footer'
+import Navbar from '_includes/Navbar'
+import Footer from '_includes/Footer'
 
 export default function DefaultLayout(props) {
     return (
@@ -10,7 +10,7 @@ export default function DefaultLayout(props) {
                 <meta name='description' content={props.description} />
             </Head>
             <Navbar />
-            <div style={{marginTop: '24px'}}>
+            <div style={{marginTop: '12px'}}>
                 {props.children}
             </div>
             <Footer />

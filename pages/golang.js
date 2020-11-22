@@ -1,7 +1,7 @@
-import DefaultLayout from 'pages/_layouts/DefaultLayout'
+import DefaultLayout from '_layouts/DefaultLayout'
 import Link from 'next/link'
-import { getAllPosts } from 'pages/_api/go-index'
-import { getConfig } from 'pages/_api/index'
+import { getAllPosts } from '_api/go-index'
+import { getConfig } from '_api/index'
 import Image from 'next/image'
 
 export default function GoLangPostHome(props) {

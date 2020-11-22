@@ -3,19 +3,19 @@
         "baseUrl": "./",
         "paths": {
             "@components/*": [
-                "pages/_components/*"
+                "_components/*"
             ],
             "@includes/*": [
-                "pages/_includes/*"
+                "_includes/*"
             ],
             "@layouts/*": [
-                "pages/_layouts/*"
+                "_layouts/*"
             ],
             "@posts/*": [
                 "pages/_posts/*"
             ],
             "@api/*": [
-                "pages/_api/*"
+                "_api/*"
             ],
         }
     }

@@ -14,6 +14,6 @@ export async function getPostBySlug(topic, slug) {
 }
 
 export async function getConfig() {
-    const config = await import(`../../config.yml`)
+    const config = await import(`../config.yml`)
     return yaml.safeLoad(config.default)
 }

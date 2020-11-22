@@ -1,7 +1,6 @@
-import DefaultLayout from 'pages/_layouts/DefaultLayout'
+import DefaultLayout from '_layouts/DefaultLayout'
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
 
 export default function PostLayout(props) {
     return (

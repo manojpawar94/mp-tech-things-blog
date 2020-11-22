@@ -1,6 +1,6 @@
-import PostLayout from 'pages/_layouts/PostLayout'
-import { getAllPosts } from "pages/_api/spark-index"
-import { getPostBySlug } from 'pages/_api/index'
+import PostLayout from '_layouts/PostLayout'
+import { getAllPosts } from "_api/spark-index"
+import { getPostBySlug } from '_api/index'
 
 export default function Post(props) {
     return <PostLayout title={props.post.title} content={props.post.content} posts={props.posts} topic={props.topic} />

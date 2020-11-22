@@ -1,9 +1,9 @@
-import DefaultLayout from 'pages/_layouts/DefaultLayout'
+import DefaultLayout from '_layouts/DefaultLayout'
 import Link from 'next/link'
-import { getConfig } from 'pages/_api/index'
-import { getAllPosts as getGoLangAllPost } from 'pages/_api/go-index'
-import { getAllPosts as getPythonAllPost } from 'pages/_api/python-index'
-import { getAllPosts as getSparkAllPost } from 'pages/_api/spark-index'
+import { getConfig } from '_api/index'
+import { getAllPosts as getGoLangAllPost } from '_api/go-index'
+import { getAllPosts as getPythonAllPost } from '_api/python-index'
+import { getAllPosts as getSparkAllPost } from '_api/spark-index'
 
 export default function Home(props) {
   return (

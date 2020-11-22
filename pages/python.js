@@ -1,26 +1,37 @@
-import DefaultLayout from 'pages/_layouts/DefaultLayout'
+import DefaultLayout from '_layouts/DefaultLayout'
 import Link from 'next/link'
-import { getAllPosts } from 'pages/_api/python-index'
-import { getConfig } from 'pages/_api/index'
+import { getAllPosts } from '_api/python-index'
+import { getConfig } from '_api/index'
 import Image from 'next/image'
 
-export default function PythonPostHome(props) {
+export default function GoLangPostHome(props) {
     return (
         <DefaultLayout title={props.title} description={props.description}>
+
             <div className="container">
-                <div className="col-sm-12">
-                    <Image
-                        src="/images/python/home-banner.jpg"
-                        alt="golang-banner"
-                        width="1200"
-                        height="500"
-                        loading="lazy"
-                    />
-                </div>
                 <div className="row">
+                    <div className="col-sm-12" style={{padding: '0px'}}>
+                        <Image
+                            src="/images/python/home-banner.jpg"
+                            alt="python-banner"
+                            width="1200"
+                            height="500"
+                            loading="lazy"
+                        />
+                    </div>
+                </div>
+
+                <div className="row">
+                    <div className="col-sm-12">
+                        <h2 style={{ padding: '20px' }}>Python Tutorials</h2>
+                    </div>
+                </div>
+
+                <div className="row">
+
                     {props.posts.map(function (post, idx) {
                         return (
-                            <div className="col-sm-6" style={{ padding: '0px' }}>
+                            <div className="col-sm-6" style={{padding: '0px'}}>
                                 <div key={idx} className="card card-transit">
                                     <h3>
                                         <Link href={'/posts/python/' + post.slug}>
@@ -33,6 +44,7 @@ export default function PythonPostHome(props) {
                             </div>
                         )
                     })}
+
                 </div>
             </div>
         </DefaultLayout>
